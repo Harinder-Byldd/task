@@ -1,0 +1,45 @@
+.form-input{
+    width: 80%;
+    height: 40px;
+ border: none;
+ border-bottom:1px solid gray ;
+ font-size: 25px;
+
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.form{
+    padding: 4rem;
+    height: 70vh;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.form-input:focus{
+    outline: none !important;
+    border-bottom:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+div{
+    padding:50px
+}
+.save{
+background-color: gray;
+padding: 10px 20px;
+color: white;
+border: none;
+margin: 20px 10px;
+border-radius:5px ;
+}
+.cancel{
+    background-color: rgb(220, 205, 205);
+padding: 10px 20px;
+color: gray;
+border: none;
+margin: 20px 10px;
+border-radius:5px ;
+}

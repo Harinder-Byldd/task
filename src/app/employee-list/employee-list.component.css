@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+  }
+
+  #add-button{
+    background-color: gray;
+    color:white
+  }
+
+  .top-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px ;
+  }

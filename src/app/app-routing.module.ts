@@ -1,10 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { EmployeeAddComponent } from './employee-add/employee-add.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+const routes: Routes = [
+  { path: '', component: EmployeeListComponent },
+  {
+    path: 'add',
+    component: EmployeeAddComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'update/:id',
+    component: EmployeeAddComponent,
+  },
+  {
+    path: '**',
+    component: EmployeeListComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

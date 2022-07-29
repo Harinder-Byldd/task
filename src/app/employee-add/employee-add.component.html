@@ -1,0 +1,19 @@
+<app-breadcrumbs></app-breadcrumbs>
+<div>
+    <h1>Add Employee</h1>
+    <form onsubmit="">
+    <div class="form" >
+        <mat-grid-list cols="2" rowHeight="50">
+            <mat-grid-tile><input placeholder="First Name *" class="form-input" required type="text"/></mat-grid-tile>
+            <mat-grid-tile><input placeholder="Last Name *" class="form-input" required type="text"/></mat-grid-tile>
+            <mat-grid-tile><input placeholder="Salary *" class="form-input" required type="number"/></mat-grid-tile>
+            <mat-grid-tile><input placeholder="Age *" class="form-input" required type="number" min="18" max="65" /></mat-grid-tile>
+            <mat-grid-tile><input placeholder="email" class="form-input" required type="email"/></mat-grid-tile>
+
+          </mat-grid-list>
+        </div>
+        <button class="save" type="submit">Save</button>
+        <button class="cancel">Cancel</button>
+</form>
+
+</div>
